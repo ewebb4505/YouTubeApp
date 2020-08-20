@@ -4,11 +4,15 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var cors = require('cors');
+
+require('dotenv').config();
 
 //gets the routes created in the routes folder
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/login');
+var searchRouter = require('./routes/search');
 
 //inits the app
 var app = express();
@@ -17,8 +21,9 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
-//sets up dependences from node_mods 
+//sets up dependences from node_mods, this is middleware
 app.use(logger('dev'));
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
@@ -28,7 +33,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/login', loginRouter);
-
+app.use('/videos', searchRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
