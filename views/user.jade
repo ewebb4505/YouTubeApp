@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1 #{username}
+    div(class="container")
+        label(for="inputPassword" class="sr-only") YouTube Search
+        input(type="text" id="yt-search-field" class="form-control" placeholder="cat videos")
+        button(class="btn btn-lg btn-primary btn-block" id="yt-search-btn") Search
