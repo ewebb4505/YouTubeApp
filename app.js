@@ -31,7 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //sets up the routes for app from the routes created seperatly 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/user', usersRouter);
 app.use('/login', loginRouter);
 app.use('/videos', searchRouter);
 
