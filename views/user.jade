@@ -9,5 +9,8 @@ block content
     div(class="container")
         div(class="searchResults")
             ul
-                for data in searchResults
-                    li=data.snippet.title
+                if searchResults != undefined
+                    for data in searchResults
+                        li=data.snippet.title
+                else
+                    li You didn't search anything

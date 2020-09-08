@@ -27,7 +27,7 @@ router.get('/', function(req, res, next) {
 
   console.log(search);
 
-  if(search == undefined){
+  if(search === undefined){
     res.render('user', {username: username});
   }
   else{
