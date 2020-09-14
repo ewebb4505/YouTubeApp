@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="efb888ce-f924-4011-af0d-294e0dde8ae4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/login_func.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/login_func.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.jade" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +35,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
+        <option value="Jade File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -32,6 +56,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -52,25 +77,43 @@
       <updated>1598290745972</updated>
       <workItem from="1598290747109" duration="14487000" />
       <workItem from="1599166892845" duration="6023000" />
-      <workItem from="1600017995376" duration="201000" />
+      <workItem from="1600017995376" duration="7020000" />
+      <workItem from="1600046174794" duration="2753000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="563" y="344" key="#Notifications" timestamp="1598466592238">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state x="563" y="344" key="#Notifications/0.0.1620.1040/3240.654.1920.1040@0.0.1620.1040" timestamp="1598466592238" />
-    <state x="591" y="275" key="FileChooserDialogImpl" timestamp="1599173035654">
+    <state x="591" y="275" key="FileChooserDialogImpl" timestamp="1600040603002">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
+    <state x="591" y="275" key="FileChooserDialogImpl/0.0.1620.1040/3240.654.1920.1040@0.0.1620.1040" timestamp="1600040603002" />
     <state x="591" y="275" key="FileChooserDialogImpl/0.0.1620.1040@0.0.1620.1040" timestamp="1599173035654" />
     <state x="312" y="165" key="SettingsEditor" timestamp="1598371513882">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state x="312" y="165" key="SettingsEditor/0.0.1620.1040/3240.654.1920.1040@0.0.1620.1040" timestamp="1598371513882" />
+    <state x="469" y="242" key="run.anything.popup" timestamp="1600021874755">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state x="469" y="242" key="run.anything.popup/0.0.1620.1040/3240.654.1920.1040@0.0.1620.1040" timestamp="1600021874755" />
   </component>
 </project>

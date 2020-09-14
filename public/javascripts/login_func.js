@@ -3,16 +3,20 @@
 
 $('#login-submit-btn').on('click', function(event) {
     event.preventDefault();
+    const hostname = $("#inputHostName").val();
+    const playlistName = $("#inputPlayListName").val();
+
     $.ajax({
         type: 'POST',
         url: '/login',
         data: {
-            email: $("#inputEmail").val(),
-            password: $("#inputPassword").val(),
+            hostname: hostname,
+            playlistName: playlistName,
+            playlistPassword: $("#inputPassword").val(),
         },
         success: function(data){
             console.log("login worked")
-            window.location.replace("/user");
+            window.location.replace(`/host?hostname=${hostname}&playlistname=${playlistName}`);
         },
         error: function(data){
             debugger;
@@ -24,16 +28,21 @@ $('#login-submit-btn').on('click', function(event) {
 
 $('#user-login-submit-btn').on('click', function(event) {
     event.preventDefault();
+    debugger;
+    const guestname = $("#inputGuestName").val();
+    const playlist = $("#inputPlaylist").val();
+    const playlistPassword = $("#inputPlaylistPassword").val();
+
     $.ajax({
         type: 'POST',
-        url: '/login',
+        url: '/login/guest',
         data: {
-            email: $("#inputEmail").val(),
-            password: $("#inputPassword").val(),
+            guestname: guestname,
+            playlistname: playlist,
+            playlistpassword: playlistPassword,
         },
         success: function(data){
-            console.log("login worked")
-            window.location.replace("/user?user=Evan");
+            window.location.replace(`/user?username=${guestname}&playlistname=${playlist}`);
         },
         error: function(data){
             debugger;

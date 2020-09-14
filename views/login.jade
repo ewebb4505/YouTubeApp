@@ -1,24 +1,28 @@
 extends layout
 
 block content
-    h1 Host Login
-    form(name="something" method="post")
-    div.host-input
-        form(class="form-signin")
-            h1(class="h3 mb-3 font-weight-normal" id="please-sign-in-tag") Please sign in
-            label(for="inputEmail" class="sr-only") Email address
-            input(type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus)
-            label(for="inputPassword" class="sr-only") Password
-            input(type="password" id="inputPassword" class="form-control" placeholder="Password" required)
-            button(class="btn btn-lg btn-primary btn-block" id="login-submit-btn" type="submit") Sign in
-    h1 Guest Login
-    div.user-input
-        form(class="user-form-signin")
-            h1(class="h3 mb-3 font-weight-normal" id="please-sign-in-tag-two") Please sign in
-            label(for="inputEmail" class="sr-only") Guest Name
-            input(type="text" id="inputName" class="form-control" placeholder="Name" required autofocus)
-            label(for="inputPassword" class="sr-only") Playlist Name
-            input(type="text" id="inputPlaylist" class="form-control" placeholder="Playlist" required)
-            label(for="inputPassword" class="sr-only") Playlist Password
-            input(type="password" id="inputPlaylistPassword" class="form-control" placeholder="Password" required)
-            button(class="btn btn-lg btn-primary btn-block" id="user-login-submit-btn" type="submit") Sign in
+    div.wrapper
+
+        div.host-input
+            h1 Host Login
+            form(class="form-signin")
+                h1(class="h3 mb-3 font-weight-normal" id="please-sign-in-tag") Please sign in
+                label(for="inputHostName" class="sr-only") Host Name
+                input(type="text" id="inputHostName" class="form-control" placeholder="Host Name" required autofocus)
+                label(for="inputPlayListName" class="sr-only") Playlist name
+                input(type="text" id="inputPlayListName" class="form-control" placeholder="Playlist Name" required)
+                label(for="inputPassword" class="sr-only") PlayList password
+                input(type="password" id="inputPassword" class="form-control" placeholder="Playlist Password" required)
+                button(class="btn btn-lg btn-primary btn-block" id="login-submit-btn" type="submit") Creat Playlist
+
+        div.user-input
+            h1 Guest Login
+            form(class="user-form-signin")
+                h1(class="h3 mb-3 font-weight-normal" id="please-sign-in-tag-two") Please sign in
+                label(for="inputGuestName" class="sr-only") Guest Name
+                input(type="text" id="inputGuestName" class="form-control" placeholder="UserName" required autofocus)
+                label(for="inputPlaylist" class="sr-only") Playlist Name
+                input(type="text" id="inputPlaylist" class="form-control" placeholder="Playlist" required)
+                label(for="inputPassword" class="sr-only") Playlist Password
+                input(type="password" id="inputPlaylistPassword" class="form-control" placeholder="Playlist Password" required)
+                button(class="btn btn-lg btn-primary btn-block" id="user-login-submit-btn" type="submit") Join Playlist
