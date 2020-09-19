@@ -8,7 +8,7 @@ $('#login-submit-btn').on('click', function(event) {
 
     $.ajax({
         type: 'POST',
-        url: '/login',
+        url: '/login/host',
         data: {
             hostname: hostname,
             playlistName: playlistName,

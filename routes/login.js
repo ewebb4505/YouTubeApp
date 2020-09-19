@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
   res.render('login', { title: 'Express' });
 });
 
-router.post('/', function(req, res, next) {
+router.post('/host', function(req, res, next) {
     
     let hostname = req.body.hostname;
     let playlistName = req.body.playlistName;

@@ -1,1 +1,6 @@
 @import 'login.css';
+
+html{
+    height: 100vh;
+    width: auto;
+}
